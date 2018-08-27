@@ -10,6 +10,10 @@ class MockResponse:
         self.data = data
         self.status_code = status_code
 
+    @property
+    def text(self):
+        return ''
+
     def json(self):
         return self.data
 
